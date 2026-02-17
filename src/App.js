@@ -4,29 +4,29 @@ import SpiltBill from "./components/SpiltBill";
 import AddFriend from "./components/AddFriend";
 import Button from "./components/Button";
 
-const initialFriends = [
-  {
-    id: 118836,
-    name: "Clark",
-    image: "https://i.pravatar.cc/48?u=118836",
-    balance: -7,
-  },
-  {
-    id: 933372,
-    name: "Sarah",
-    image: "https://i.pravatar.cc/48?u=933372",
-    balance: 20,
-  },
-  {
-    id: 499476,
-    name: "Anthony",
-    image: "https://i.pravatar.cc/48?u=499476",
-    balance: 0,
-  },
-];
+// const initialFriends = [
+//   {
+//     id: 118836,
+//     name: "Ahmed",
+//     image: "https://i.pravatar.cc/48?u=115836",
+//     balance: -7,
+//   },
+//   {
+//     id: 933372,
+//     name: "Kareem",
+//     image: "https://i.pravatar.cc/48?u=548822",
+//     balance: 20,
+//   },
+//   {
+//     id: 499476,
+//     name: "Osama",
+//     image: "https://i.pravatar.cc/48?u=499476",
+//     balance: 0,
+//   },
+// ];
 
 function App() {
-  const [friends, setFriends] = useState(initialFriends);
+  const [friends, setFriends] = useState([]);
   const [isOpen, setIsOpen] = useState(false);
   const [selectedFriend, setSelectedFriend] = useState(null);
 

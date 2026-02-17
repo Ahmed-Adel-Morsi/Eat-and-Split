@@ -5,7 +5,11 @@ function FriendCard({ friend, selectedFriend, onSelection }) {
 
   return (
     <li className={selected ? "selected" : ""}>
-      <img src={friend.image} alt={friend.name} />
+      <img
+        src={friend.image}
+        alt={friend.name}
+        style={{ height: 48, width: 48, objectFit: "cover" }}
+      />
 
       <h3>{friend.name}</h3>
       {friend.balance === 0 && <p>You and {friend.name} are even</p>}
